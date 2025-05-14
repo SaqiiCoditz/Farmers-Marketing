@@ -1,46 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>FarmFreshly | Your gateway to local farms</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Font Awesome for hamburger icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <h1>Farm Freshly</h1>
-            </div>
-            
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-            
-            <div class="links" id="nav-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Why buy Local</a></li>
-                    <li><a href="#">Spotlight</a></li>
-                    <li><a href="#">Weekly Schedule</a></li>
-                    <li><a href="#">Subscribe to Us</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="logo">
+          <h1>Farm Freshly</h1>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="links" id="nav-links">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#wbl">Why buy Local</a></li>
+            <li><a href="#">Spotlight</a></li>
+            <li><a href="#">Weekly Schedule</a></li>
+            <li><a href="#">Subscribe to Us</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-       <div class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h1>Fresh Local Food Delivered!</h1>
-        <h3>Support farmers. Eat seasonal.</h3>
-        <a href="#" class="cta-button">Find Farms Near You!</a>
-    </div>
-</div>
+      <!--Hero Section-->
+      <div class="hero" id="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h1>Fresh Local Food Delivered!</h1>
+          <h3>Support farmers. Eat seasonal.</h3>
+          <a href="#" class="cta-button">Find Farms Near You!</a>
+        </div>
+      </div>
+
+      <!--Why Buy Local-->
+      <div class="wbl" id="wbl">
+        <h2 class="section-title">Why Buy Local?</h2>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-icon"><i class="bx bxs-leaf"></i></div>
+            <h3 class="card-title">Eco-Friendly</h3>
+            <p class="card-des">
+              Reduce food miles—fresher food, lower carbon footprint.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class='bx bx-user-pin'></i></div>
+            <h3 class="card-title">Supports Farmers</h3>
+            <p class="card-des">100% of your money goes to hardworking local families.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class='bx bx-health'></i></div>
+            <h3 class="card-title">Healthier Choices</h3>
+            <p class="card-des">No artificial preservatives, picked at peak ripeness.</p>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
