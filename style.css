@@ -73,12 +73,12 @@ nav {
     .links {
         position: fixed;
         top: 62px;
-        right: 0;  /* Changed from left: 0 */
+        right: 0;  
         width: 100vw;
         height: calc(100vh - 62px);
         background: #4CAF50;
         padding: 20px 0;
-        transform: translateX(100%);  /* Changed from -100% */
+        transform: translateX(100%); 
         transition: transform 0.3s ease-in-out;
         z-index: 1000;
         overflow-y: auto;
@@ -108,5 +108,93 @@ nav {
         transform: none;
         box-shadow: none;
         border-radius: 30px;
+    }
+}
+
+.hero {
+    height: calc(100vh - 62px);
+    min-height: 500px; /* Minimum height for smaller screens */
+    position: relative;
+    color: #FFF8E1;
+    background: url(assets/Hero.jpeg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 62px; /* Push below fixed navbar */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    position: relative;
+    max-width: 90%;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive font size */
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.hero-content h3 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-style: italic;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 35px;
+    background: #4CAF50;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+    background: #388E3C;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: calc(100vh - 62px);
+        min-height: 400px;
+    }
+    
+    .hero-content h1 {
+        margin-bottom: 15px;
+    }
+    
+    .hero-content h3 {
+        margin-bottom: 25px;
+    }
+    
+    .cta-button {
+        padding: 10px 25px;
     }
 }
