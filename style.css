@@ -573,7 +573,7 @@ input[type="email"]:focus {
 }
 
 .submit-btn {
-  background-color: #3498db;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -586,7 +586,7 @@ input[type="email"]:focus {
 }
 
 .submit-btn:hover {
-  background-color: #2980b9;
+  background-color: #2e7d32;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(41, 128, 185, 0.3);
 }
