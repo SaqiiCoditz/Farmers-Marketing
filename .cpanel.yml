@@ -1,0 +1,3 @@
+deployment:
+  tasks:
+    - echo "Deployment started for subdomain"
