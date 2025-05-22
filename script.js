@@ -28,3 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.querySelector('#target').scrollIntoView({ behavior: 'smooth' });
